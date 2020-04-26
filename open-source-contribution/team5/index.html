@@ -12,9 +12,9 @@
         <div class="card-container">
             <header>
                     <h2 class="text-center">Dutch Tab</h2>
-                    <form class="container">
+                    <div class="container">
                        How Much Was your bill? <br>
-                        <input class='input-box'  type="text"> <br>
+                        <input class='input-box' id='input1' type="number"> <br>
                        How was our service? <br>
                        <select id="feedback" name="feedback">
                         <option value="excellent">Excellent</option>
@@ -23,14 +23,18 @@
                         
                       </select> <br>
                        How Many people are sharing the bill?
-                        <input class='input-box' type="text"> <br>
+                        <input class='input-box'  id='input2'  type="number"> <br>
                        Tip amount
-                        <input class='input-box' type="text"> <br>
-                        <button class="btn btn-dark calcBtn">Calculate</button>
-                    </form>
+                        <input class='input-box' id='input3' type="number"> <br>
+                        <button class="btn btn-dark calcBtn" onclick="add()">Calculate</button>
+                    </div><br><Br>
+                        <div>Each has to pay: ₹</div>
+                    <span id='demo'></span>
             </header>
         </div>
     </div>
+
+    <script src='./index.js'></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
