@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#maincontainer{
+width: 480px;
+height:580px ;
+border:black 2px solid;
+background-color: white;
+color: black;
+margin: auto;
+}
+#btns{
+    width: 80%;
+    margin-top: 20px;
+}
+.dutchTab{
+    background-color: black;
+    color: white;
+    height: 40px;
+    text-align: center;
+
+}
