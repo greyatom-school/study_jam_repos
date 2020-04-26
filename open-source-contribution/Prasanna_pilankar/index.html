@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dutch Tab</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<body>
+  <div id="container">
+    <h1>Dutch Tab</h1>
+
+    <form>
+      <p>How much was your Bill?  </p>
+      <p> <input type="text" class="fillBox" id="amtbill" placeholder="0.00 ruppes"> </p>
+
+
+        <p>How was our service? </p>
+      <p><select id="servicelevel">
+        <option disabled selected value="0">please chosse an option</option>
+        <option value="0.4">Great 40%</option>
+        <option value="0.3">Good 30%</option>
+        <option value="0.2">OK 20%</option>
+        <option value="0.1">Poor 10%</option>
+        <option value="0.05">Horrible 5%</option></select>
+       </p>
+
+       <p>How many people are sharing the bill?</p>
+       <p><input type="text" class="fillBox" id="numpeople" placeholder="0 people"> </p>
+       <p>tip ammount?</p>
+       <p><input type="text" class="fillBox" id="tip1" placeholder="0 ruppees"> </p>
+
+
+<button type="button" id="calculate"> Calculate</button>
+    </form>
+    <div id="totalArea">
+<div id="billSplit">
+  <sup>₹</sup><span id="split">0.00</span>
+  <small id="each">per person</small>
+</div>
+
+    <div id="totalTip">
+      <sup>₹</sup><span id="tip">0.00</span>
+      <small id="each2">per person</small>
+    </div>
+
+    <div id="grandTotal">
+      <sup>₹</sup><span id="grand">0.00</span>
+      <small id="each3">per person</small>
+    </div>
+  
+  </body>
+</html>
+  <script  src="script.js"></script>
+
+</body>
+</html>
