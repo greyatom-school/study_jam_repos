@@ -11,25 +11,30 @@
     <div class="container">
         <div class="card-container">
             <header>
-                    <h2 class="text-center">Dutch Tab</h2>
+                    <h2 class="text-center card-header">Dutch Tab</h2><br>
                     <div class="container">
                        How Much Was your bill? <br>
-                        <input class='input-box' id='input1' type="number"> <br>
+                        <input class='input-box' id='input1' type="number" placeholder="0.00 rupees"> <br><br>
                        How was our service? <br>
-                       <select id="feedback" name="feedback">
+                       <select id="feedback" name="feedback" >
+                        <option>Please choose an option</option>
                         <option value="excellent">Excellent</option>
                         <option value="saab">Good</option>
                         <option value="fiat">Bad</option>
                         
-                      </select> <br>
+                      </select> <br><br>
                        How Many people are sharing the bill?
-                        <input class='input-box'  id='input2'  type="number"> <br>
+                        <input class='input-box'  id='input2'  type="number" placeholder="0 people"> <br><br>
                        Tip amount
-                        <input class='input-box' id='input3' type="number"> <br>
+                        <input class='input-box' id='input3' type="number" placeholder="0 rupees"> <br><br>
                         <button class="btn btn-dark calcBtn" onclick="add()">Calculate</button>
                     </div><br><Br>
-                        <div>Each has to pay: ₹</div>
-                    <span id='demo'></span>
+                        <div class="text-center">
+                            Each has to pay: ₹
+                            <span id='demo'></span>
+
+                        </div>
+                    
             </header>
         </div>
     </div>
